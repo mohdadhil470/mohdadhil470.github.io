@@ -1,0 +1,101 @@
+@media (max-width: 991px) {
+.navmenu{
+    display: none;
+    flex-direction: column;
+    gap: 40px !important;
+    width: 200px;
+    height: 100vh;
+    background-color:#106EBE;
+    top: 0;
+    right: 0; 
+    position: absolute;
+    align-items: flex-start;
+    justify-content: center;
+} 
+.navbar-toggle{
+    display: block;
+    z-index: 999;
+}
+.navmenu.active{
+display: flex;
+}
+.greeting{
+font-size: 26px;
+}
+.hero-content h1{
+font-size: 26px;
+}
+.designer-role{
+font-size: 60px;
+}
+.description{
+font-size: 16px;
+}
+.social-icons{
+    display: none;
+}
+.social-icon{
+    display: flex;
+}
+.profile-image img{
+    margin-top: 100px;
+}
+} 
+
+@media (max-width: 768px){
+.hero-section{
+    padding-top: 50px;
+}
+.greeting{
+font-size: 26px;
+}
+.hero-content h1{
+font-size: 26px;
+}
+.designer-role{
+font-size: 60px;
+}
+.description{
+font-size: 16px;
+}
+.social-icons{
+    display: none;
+}
+.social-icon{
+    display: flex;
+}
+}
+@media (max-width: 576px){
+.greeting{
+font-size: 30px;
+}
+.hero-content h1{
+font-size: 25px;
+}
+.designer-role{
+font-size: 40px;
+}
+.description{
+font-size: 15px;
+}
+.cv-button-social{
+    margin-top: 30px;
+}
+.profile-image img{
+    margin-top: 10px;
+}
+}
+@media (max-width: 320px){
+.greeting{
+font-size: 26px;
+}
+.hero-content h1{
+font-size: 26px;
+}
+.designer-role{
+font-size: 35px;
+}
+.description{
+font-size: 16px;
+}
+}
