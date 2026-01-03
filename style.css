@@ -306,7 +306,7 @@ font-size: 20px;
     background-color: #F4F4F4;
 }
 .about{
-    width: 100%;
+    width: 50%;
     display: inline-block;
 }
 .about h1{
@@ -322,6 +322,7 @@ font-size: 20px;
     line-height: 30px;
     font-size: 18px;
     font-weight:380 ;
+    margin: 0;
 }
 .social ul{
  list-style: none;
@@ -347,11 +348,20 @@ font-size: 20px;
     background-color: #0FFCBE;
     color: #F4F4F4;
 }
+.skill-card{
+    justify-content: flex-end;
+}
+.skills{
+    margin-top: 200px;
+    justify-content: right;
+    display: flex;
+}
 .skills h1{
     font-size: 36px;
  font-weight: bold;
  color: #106EBE;
- margin-bottom: 10px;
+ text-align: end;
+ margin-bottom: 0px;
 }
 
 .skill{
