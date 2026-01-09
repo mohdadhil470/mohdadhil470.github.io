@@ -30,3 +30,15 @@ document.addEventListener('mousemove', function(e) {
 
 // To create a more continuous line, you might use a smaller interval (5-10ms)
 // or use the 'requestAnimationFrame' method for smoother, performance-optimized animation.
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  document.querySelector(".hero-section").style.transform =
+    `translateY(${scrollY * 1}px)`;
+
+  document.querySelector(".hero-section").style.transform =
+    `translateY(${scrollY * 1}px)`;
+
+  document.querySelector(".hero-section").style.transform =
+    `translateY(${scrollY * 3}px)`;
+});

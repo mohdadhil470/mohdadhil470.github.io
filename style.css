@@ -62,13 +62,13 @@ transition-duration: 0.5s; transition-timing-function:ease-out;
     text-decoration: none;
     font-size:16px;
     font-family: "Poppins", sans-serif;
-    border-radius: 10px;
+    
     padding: 5px 10px;
 }
 
 .navmenu li a:hover {
-    background-color: #F4F4F4;
-    color: #106EBE;
+    color: #0FFCBE;
+    border-bottom: 1px solid #0FFCBE;
 }
 .navbar-toggle{
     display: none;
@@ -96,10 +96,11 @@ transform: translateY(-6px)rotate(-45deg);
 }
 /* --- Hero Section --- */
 #hero{
-background:#106EBE;
+background-image: url(img/hero\ banner\ img.svg);
  width: 100%;
 height: 100%;
 padding-top: 50px;
+position: relative;
 }
 .hero-section{
      width: 100%;
@@ -107,6 +108,98 @@ padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 20;
+    
+}
+.tech-anime div{
+position: absolute;
+width: 25px;
+height: 25px;
+}
+.tech-anime div:nth-child(1){
+    top: 20%;
+    left: 4%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(2){
+    bottom: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(3){
+    top: 50%;
+    right: 42%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(4){
+    bottom: 10%;
+    left: 20%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(5){
+    top: 12%;
+    right: 10%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(6){
+    top: 40%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(7){
+    top: 12%;
+    left: 40%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(8){
+    top: 30%;
+    left: 10%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(9){
+    top: 90%;
+    right: 10%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(10){
+    top: 50%;
+    left: 10%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(11){
+    bottom: 10%;
+    left: 5%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(12){
+    top: 50%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(13){
+    top: 80%;
+    left: 30%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(14){
+    top: 70%;
+    right: 60%;
+    animation: animate 10s linear infinite;
+}
+.tech-anime div:nth-child(15){
+    top: 0%;
+    left: 10%;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0.1)translateY(0)rotate(0);
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(1.3)translateY(-90px);
+        opacity: 0;
+    }
 }
 .hero-content{
     width: 100%;
@@ -302,22 +395,25 @@ font-size: 20px;
 /* about section */
 #about-me{
     width: 100%;
+    height: 100%;
     padding: 200px 0px;
     background-color: #F4F4F4;
+    position: relative;
+    background-image: url(img/hero\ banner\ img.svg);
 }
 .about{
-    width: 50%;
+    width: 100%;
     display: inline-block;
 }
 .about h1{
  font-size: 36px;
  font-weight: bold;
- color: #106EBE;
+ color: #454242;
  margin-bottom: 10px;
 
 }
 .about p{
-    color: #106dbeb5;
+    color: #454242d7;
     text-align: left;
     line-height: 30px;
     font-size: 18px;
@@ -329,18 +425,19 @@ font-size: 20px;
  display: flex;
  gap: 10px;
  padding: 0;
+ margin-top: 20px;
 }
 .social li{
     width: 50px;
     height: 50px;
-     background-color: #106dbe1b;
+     background-color: #E8E8E8;
      border-radius: 50px;
      display: flex;
      align-items: center;
      justify-content: center;
 }
 .social a {
-    color:#106EBE;
+    color:#0c86f1;
     font-size: 24px;
 }
 
@@ -349,26 +446,20 @@ font-size: 20px;
     color: #F4F4F4;
 }
 .skill-card{
-    justify-content: flex-end;
-}
-.skills{
-    margin-top: 200px;
-    justify-content: right;
-    display: flex;
+    margin-left: 100px;
 }
 .skills h1{
     font-size: 36px;
  font-weight: bold;
- color: #106EBE;
- text-align: end;
+ color: #454242;
  margin-bottom: 0px;
 }
 
 .skill{
-    background-color: #106dbe1b;
+    background-color: #E8E8E8;
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -385,7 +476,7 @@ font-size: 20px;
 }
 .skill span{
     font-size: 13px;
-  color: #106EBE;
+  color: #454242d7;
 }
 /* service section */
 #services{
