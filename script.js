@@ -34,11 +34,11 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
   document.querySelector(".hero-section").style.transform =
-    `translateY(${scrollY * 1}px)`;
+    `translateY(${scrollY * 0.2}px)`;
 
   document.querySelector(".hero-section").style.transform =
-    `translateY(${scrollY * 1}px)`;
+    `translateY(${scrollY * 0.4}px)`;
 
   document.querySelector(".hero-section").style.transform =
-    `translateY(${scrollY * 3}px)`;
+    `translateY(${scrollY * 0.6}px)`;
 });
