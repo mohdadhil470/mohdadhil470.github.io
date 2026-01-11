@@ -269,7 +269,7 @@ height: 25px;
 
 .description{
     font-size: 20px;
-    color: #f4f4f4c3;
+    color: #f4f4f4e3;
     margin-top: 15px;
 }
 .description span{
@@ -302,21 +302,6 @@ font-weight: bold;
     gap: 20px;
     align-items: center;
     width: max-content;
-}
-.social-icon{
-    display: none;
-    gap: 15px;
-}
-.social-icon a{
-    color: #106EBE;
-    background-color: #0FFCBE;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
 }
 .socail-name{
     font-size:25px;
@@ -397,28 +382,26 @@ font-size: 20px;
     width: 100%;
     height: 100%;
     padding: 100px 0px;
-    background-color: #F4F4F4;
     position: relative;
     background-image: url(img/hero\ banner\ img.svg);
 }
 .about{
-    width: 100%;
+    width: 50%;
     display: inline-block;
 }
-.about h1{
- font-size: 36px;
+.about h2{
+ color: #F4F4F4;
  font-weight: bold;
- color: #454242;
  margin-bottom: 10px;
 
 }
 .about p{
-    color: #454242d7;
+    color: #f4f4f4e3;
     text-align: left;
     line-height: 30px;
     font-size: 18px;
-    font-weight:380 ;
-    margin: 0;
+    font-weight:200 ;
+    margin-top:25px;
 }
 .social ul{
  list-style: none;
@@ -430,33 +413,40 @@ font-size: 20px;
 .social li{
     width: 50px;
     height: 50px;
-     background-color: #E8E8E8;
-     border-radius: 50px;
      display: flex;
      align-items: center;
      justify-content: center;
 }
 .social a {
-    color:#0c86f1;
+    color:#0FFCBE;
     font-size: 24px;
+    
 }
 
-.social li:hover {
-    background-color: #0FFCBE;
+.social a:hover {
     color: #F4F4F4;
+    transform:rotate(360deg);
+    transition: 2s;
+}
+.skills{
+    display: flex;
+    justify-content: flex-end;
 }
 .skill-card{
-    margin-left: 100px;
+    display: flex;
+    justify-content: flex-end;
 }
-.skills h1{
-    font-size: 36px;
- font-weight: bold;
- color: #454242;
+.skills h2{
+    font-weight: bold;
+ color: #F4F4F4;
  margin-bottom: 0px;
+ text-align: end;
 }
-
+.skill span{
+    color:#f4f4f4e3;
+}
 .skill{
-    background-color: #E8E8E8;
+    background-color: #277CC4;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -466,22 +456,33 @@ font-size: 20px;
     justify-content: center;
     border-radius: 10px;
     gap: 10px;
+    border: #277CC4 0.5px solid;
+    margin-top: 25px;
 }
 .skill:hover{
-    box-shadow: #106EBE 0px 0px 10px;
+    border: #0FFCBE 0.5px solid;
+}
+.skill:hover img{
+    transform: translatey(-50px)scale(1.3);
+    transition: 2s;
+    animation: shake 2s infinite;
+}
+
+@keyframes shake{
+    10%{transform: scale(1.05) rotate(5deg);}
+    20% {transform: scale(1.05) rotate(-5deg);}
+    30% {transform: scale(1.05) rotate(5deg);}
+    40% {transform: none;}
 }
 .skill img{
     width: 50px;
     height: 50px;
 }
-.skill span{
-    font-size: 13px;
-  color: #454242d7;
-}
 /* service section */
 #services{
-    padding: 200px 0px;
-    background-color: #106EBE;
+    padding: 100px 0px;
+    position: relative;
+    background-image: url(img/hero\ banner\ img.svg);
     text-align: center;
 }
 .services h1{
@@ -508,11 +509,12 @@ font-size: 36px;
      margin-top: 10px;
 }
 .my-service:hover{
-box-shadow: #0FFCBE 0px 0px 10px;
+box-shadow: #0FFCBE 0px 0px 3px 1px;
+border: 1px solid #0FFCBE;
 }
 .services-icon{
     display: flex;
-    background-color:#106EBE;
+    background-color:#277CC4;
     width: min-content;
     padding: 15px;
     border-radius: 15px;
@@ -537,20 +539,20 @@ box-shadow: #0FFCBE 0px 0px 10px;
      margin-top: 10px;
 }
 #works{
-    padding: 200px 0px;
-    background-color: #F4F4F4;
+    padding: 100px 0px;
+     background-image: url(img/hero\ banner\ img.svg);
     text-align: center;
 }
 .works h1{
    font-size: 36px;
  font-weight: bold;
- color: #106EBE;
+ color: #F4F4F4;
  margin-bottom: 10px;
  margin-top: 0; 
 }
 .works p{
    font-size: 16px;
-    color:#0964b3a3;
+    color:#f4f4f4b3;
     margin-bottom: 10px;
     margin-top: 0;
     padding: 0; 
@@ -596,4 +598,30 @@ background:#106dbe1b;
   0%   { bottom:0px;}
   50%  { bottom:50px;}
   100% {  bottom:0px;}
+}
+.arrow{
+position: absolute;
+left: 0px;
+bottom: 40%;
+z-index: 100;
+border-radius: 10px;
+background-color: rgba(0, 0, 0, 0.59);
+padding: 20px;
+ border: 2px solid  rgba(0, 0, 0, 0.59) ;
+}
+.arrows{
+position: absolute;
+border-radius: 10px;
+background-color:  rgba(0, 0, 0, 0.59);
+padding: 20px;
+right: 0;
+bottom: 40%;
+ border: 2px solid  rgba(0, 0, 0, 0.59) ;
+z-index: 100;
+}
+.arrows:focus{
+    border: 2px solid rgb(215, 142, 115);
+}
+.arrow:focus{
+    border: 2px solid rgb(215, 142, 115);
 }

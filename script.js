@@ -39,6 +39,6 @@ window.addEventListener("scroll", () => {
   document.querySelector(".hero-section").style.transform =
     `translateY(${scrollY * 0.4}px)`;
 
-  document.querySelector(".hero-section").style.transform =
+  document.querySelector(".hero").style.transform =
     `translateY(${scrollY * 0.6}px)`;
 });
