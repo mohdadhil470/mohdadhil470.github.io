@@ -533,8 +533,8 @@ border: 1px solid #0FFCBE;
 }.scroll-up {
    display: none; 
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
