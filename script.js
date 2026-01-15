@@ -123,4 +123,25 @@ $(document).ready(function () {
       return false;
    });
 })
+// function emailSend(){
+//     const email = {
+//   from: 'sender@example.com',
+//   to: 'recipient@example.com',
+//   subject: 'Test email',
+//   text: 'This is a test email sent from the browser'
+// }
+// smtp.sendMail(email)
+//   .then(info => console.log(info))
+//   .catch(err => console.error(err))
+// }
+
+
+
+
+
+
+
+
+
+
 

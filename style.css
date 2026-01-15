@@ -28,14 +28,6 @@
   left: calc(var(--circle-size) / 2 * -1);
   pointer-events: none;
 }
-/* #cursor{
-    height: 40px; width: 40px;
-background: #106EBE;
-box-shadow: #0FFCBE 0px 0px 10px;
- border-radius: 50%; position: absolute;
-display: none;
-transition-duration: 0.5s; transition-timing-function:ease-out;
-}  */
 html, body{
     overflow-x: hidden;
 }
@@ -313,7 +305,6 @@ font-size: 20px;
     padding: 100px 0px;
     background-image: url(img/hero\ banner\ img.svg);
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -338,13 +329,11 @@ font-size: 20px;
 .social ul{
  list-style: none;
  display: flex;
- gap: 10px;
+ gap: 30px;
  padding: 0;
  margin-top: 20px;
 }
 .social li{
-    width: 50px;
-    height: 50px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -694,3 +683,69 @@ z-index: 100;
     width: 100%;
     justify-content: center;
 }
+/* footer */
+footer{
+    background-color: #106EBE;
+    border-top: 1px solid #277CC4;
+    padding: 50px 0px;
+     z-index: 12;
+    position: relative;
+    width: 100%;
+}
+.footer-navigation{
+    text-align: center;
+}
+.footer-navigation .rights{
+    color: #f4f4f4d0;
+}
+.footer-navigation hr{
+    border: 1px solid #F4F4F4;
+    margin-top: 20px;
+}
+.icon-social-media{
+    text-align: start;
+}
+.quick-links h4{
+    color: #F4F4F4;
+    margin-bottom: 20px;
+    text-align: start;
+}
+.contact-hed{
+    color: #F4F4F4;
+    margin-bottom: 20px;
+    text-align: start;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+    padding: 0%;
+}
+.contact-icon{
+    display: flex;
+    gap: 10px;
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #0FFCBE;
+}
+.footer-nav li a {
+    color: #0FFCBE;
+    text-decoration: none;
+    font-size:16px;
+    font-family: "Poppins", sans-serif;
+    padding: 5px 10px;
+     border: 1px solid transparent;
+     transition: 0.3s;
+}
+.footer-nav li a:hover {
+    color: #F4F4F4;
+    border: 1px solid #F4F4F4;
+    border-radius: 10px;
+}
+
