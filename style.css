@@ -306,6 +306,7 @@ font-size: 20px;
     background-image: url(img/hero\ banner\ img.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .about{
     width: 100%;
