@@ -48,16 +48,16 @@ font-size: 16px;
     padding-top: 50px;
 }
 .greeting{
-font-size: 26px;
+font-size: 28px;
 }
 .hero-content h1{
-font-size: 26px;
+font-size: 28px;
 }
 .designer-role{
 font-size: 60px;
 }
 .description{
-font-size: 16px;
+font-size: 18px;
 }
 .social-icons{
     display: none;
@@ -65,12 +65,19 @@ font-size: 16px;
 .social-icon{
     display: flex;
 }
+.skills h2{
+    font-size: 35px;
+}
+.about h2{
+    font-size: 35px;
+}
 .caption{
-    font-size: 12px;
+    font-size: 14px;
 }
 .section-headings{
     margin-bottom: 0;
     padding: 0;
+    font-size: 35px;
 }
 }
 @media (max-width: 576px){
