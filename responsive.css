@@ -65,6 +65,13 @@ font-size: 16px;
 .social-icon{
     display: flex;
 }
+.caption{
+    font-size: 12px;
+}
+.section-headings{
+    margin-bottom: 0;
+    padding: 0;
+}
 }
 @media (max-width: 576px){
 .greeting{
