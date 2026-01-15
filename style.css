@@ -68,8 +68,8 @@ html, body{
     text-decoration: none;
     font-size:16px;
     font-family: "Poppins", sans-serif;
-    
     padding: 5px 10px;
+    
 }
 
 .navmenu li a:hover {
@@ -258,6 +258,8 @@ font-weight: bold;
 .social-icons a:hover {
     background-color: #F4F4F4;
     color: #106EBE;
+     transform:rotate(360deg);
+    transition: 1.3s;
 }
 .floating-skills_container{
     width: 100%;
@@ -577,12 +579,6 @@ z-index: 100;
     padding: 100px 0px;
     background:#106EBE;
     text-align: center;
-}
-.get-in-touch h2{
- color: #F4F4F4;
- font-weight: bold;
- margin-bottom: 20px;
-
 }
 .get-in-touch{
     display: flex;
